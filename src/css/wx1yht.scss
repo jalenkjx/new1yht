@@ -223,5 +223,26 @@
                 }
             }
         }
+        .rule{
+            width:100%;
+            background:#ae0a2b;
+            height:3.15rem;
+            box-sizing:border-box;
+            padding-top:.3rem;
+            .title{
+                padding-left:.2rem;
+                border-left:3px solid #fff;
+                color:#fff;
+                margin-left:.2rem;
+            }
+            .content{
+                font-size:.26rem;
+                color:#db93a2;
+                padding-top:.15rem;
+                padding-left:.3rem;
+                padding-right:.3rem;
+                
+            }
+        }
     }//section
 }//wrapper

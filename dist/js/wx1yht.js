@@ -16,5 +16,5 @@ require(['jquery'],function($){
 	$('.goods').on('click',function(){
 		$(this).css('display','none');
 		$('.userInfo').css('display','block');
-	})
+	});
 })
