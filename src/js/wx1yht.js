@@ -9,5 +9,12 @@ var winWidth = window.innerWidth;
 		html.style.fontSize = fontSize + "px";
 	}
 require(['jquery'],function($){
-	console.log(1);
+	$('.userInfo').on('click',function(){
+		$(this).css('display','none');
+		$('.goods').css('display','block');
+	})
+	$('.goods').on('click',function(){
+		$(this).css('display','none');
+		$('.userInfo').css('display','block');
+	})
 })
