@@ -15,6 +15,7 @@
         .goods{
             background:#e70e39;
             padding-top:.2rem;
+            padding-bottom:.3rem;
             li{
                 width:100%;
                 height:2.08rem;
@@ -174,11 +175,15 @@
                 margin-right:auto;
                 border-radius:.1rem;
                 font-size:.32rem;
-                margin-bottom:.56rem;
+                margin-bottom:.5rem;
             }
             a{
                 display:block;
-                width:2.2rem;
+                width:6.7rem;
+                height:.8rem;
+                line-height:.8rem;
+                border:1px solid #FCD520;
+                border-radius:.1rem;
                 font-size:.32rem;
                 margin:0 auto;
                 text-align:center;
@@ -245,4 +250,164 @@
             }
         }
     }//section
+    .alert_help{
+        padding-top:.8rem;
+        box-sizing: border-box;
+        border-radius:.2rem;
+        position:relative;
+        width:6.5rem;
+        height:5.1rem;
+        background:#fff;
+        z-index: 100;
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform:translate(-50% , -50%);
+        .close{
+            width:.6rem;
+            height:.94rem;
+            display:block;
+            position:absolute;
+            right:.3rem;
+            top:-0.93rem;
+            img{
+                display:block;
+            }
+        }
+        .succ_help{
+            
+        
+            .succ_txt{
+                margin-bottom:.3rem;
+                text-align: center;
+                font-size:.32rem;
+                font-weight: 600;
+            }
+            .cong{
+                margin-bottom:.3rem;
+                text-align: center;
+                font-size:.26rem;
+            }
+            .convert{
+                overflow:hidden;
+                
+                margin-bottom:.3rem;
+                p{
+                    text-align: center;
+                    #coupon{
+                        width:1.8rem;
+                        color:#ec0332;
+                        font-weight:600;
+                        font-size:.32rem;
+                    }
+                }
+                
+            }
+            .intros{
+                text-align:center;
+                margin-bottom:.35rem;
+                padding:0 .2rem;
+            }
+            .download{
+                display:block;
+                background:#fdd420;
+                width:5.3rem;
+                height:.7rem;
+                margin:0 auto;
+                border-radius:.1rem;
+                font-size:.26rem;
+            }
+        }
+        .phoneCheck{
+            p{
+                text-align:center;
+            }
+            p:nth-child(2){
+                color:#f13b51;
+            }
+            .phoneNum{
+                background:#f0f0f0;
+                height:.7rem;
+                margin:0 auto;
+                margin-bottom:.2rem;
+                margin-top:.35rem;
+                line-height:.7rem;
+                text-align: left;
+                width:5.3rem;
+                
+                input{
+                    padding-left:.2rem;
+                    background:#f0f0f0;
+                    height:.7rem;
+                    width:auto;
+                    font-size:.3rem;
+                }
+            }
+            .checkCode{
+                width:5.3rem;
+                margin:0 auto;
+                background:#f0f0f0;
+                height:.7rem;
+                line-height:.7rem;
+                text-align:left;
+                input{
+                    
+                    padding-left:.2rem;
+                    background:#f0f0f0;
+                    height:.7rem;
+                    width:3rem;
+                    font-size:.3rem;
+                    border-right:1px solid #ccc;
+                }
+                span{
+                    color:#f13b51;
+                    display:inline-block;
+                    height:.7rem;
+                    line-height:.7rem;
+                    margin-left:.2rem;
+                }
+            }
+            button{
+                display:block;
+                background:#fdd420;
+                width:5.3rem;
+                height:.7rem;
+                margin:0 auto;
+                border-radius:.1rem;
+                margin-top:.3rem;
+                font-size:.26rem;
+            }
+        }
+        .check_succ{
+            p{
+                text-align: center;
+                &:nth-child(1){
+                    font-size:.36rem;
+                    margin-top:.7rem;
+                }
+                &:nth-child(2){
+                    font-size:.28rem;
+                    margin-top:.4rem;
+                    margin-bottom:.5rem;
+                }
+            }
+            button{
+                display:block;
+                width:5.3rem;
+                height:.7rem;
+                margin:0 auto;
+                background:#FDD420;
+                font-size:.26rem;
+            }
+        }
+    }
+    .mask{
+        width:100%;
+        height:100%;
+        background:#000;
+        opacity: 0.6;
+        position:fixed;
+        top:0;
+        left:0;
+    }
 }//wrapper

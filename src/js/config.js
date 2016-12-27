@@ -6,9 +6,8 @@ require.config({
 	paths : {
 		//会在  baseUrl 下面去查找
 		jquery : "zepto.min",
-//		swiper : "swiper.min",
-//		LAreaData1:"LAreaData1",
-//		LArea:"LArea",
+
+		Clipboard : "clipboard.min"
 //		pingpp:"pingpp"
 	},
 	//兼容   把非模块化的js文件模块化
@@ -18,7 +17,11 @@ require.config({
 			deps:[], //循环依赖，先不管
 			//返回 jquery 暴露的全局对象
 			exports:"window.Zepto"
-		}//,
+		},
+		Clipboard:{
+			deps:[],
+			exports:"Clipboard"
+		}
 //		swiper : {
 //			deps : ["jquery"], //依赖 jquery
 //			exports : "Swiper" //返回的对象
