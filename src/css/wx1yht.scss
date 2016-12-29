@@ -26,7 +26,6 @@
                     float:left;
                     width:1.88rem;
                     height:1.88rem;
-                    border:1px solid #000;
                     box-sizing:border-box;
                     margin-right:.2rem;
                     img{
@@ -91,6 +90,10 @@
                 border-radius:50%;
                 border:5px solid #f16e88;
                 box-sizing:border-box;
+                overflow:hidden;
+                img{
+                    width:100%;
+                }
                 
             }
             p{
