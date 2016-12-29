@@ -61,7 +61,11 @@ gulp.task("css1",function(){
 //      .pipe(concat("min.css"))
 		//后编译处理
         .pipe(postcss([
-        	autoprefixer //浏览器前缀
+        	autoprefixer({
+            browsers: ['last 2 versions', 'Android >= 4.0'],
+            cascade: true, //是否美化属性值 默认：true 像这样：
+            remove:true //是否去掉不必要的前缀 默认：true 
+        }) //浏览器前缀
 //      	, 
 //      	cssnano       //压缩css
         ]))
@@ -77,7 +81,11 @@ gulp.task("css2",function(){
 //      .pipe(concat("min.css"))
 		//后编译处理
         .pipe(postcss([
-        	autoprefixer //浏览器前缀
+        	autoprefixer({
+            browsers: ['last 2 versions', 'Android >= 4.0'],
+            cascade: true, //是否美化属性值 默认：true 像这样：
+            remove:true //是否去掉不必要的前缀 默认：true 
+        }) //浏览器前缀
 //      	, 
 //      	cssnano       //压缩css
         ]))
