@@ -1,9 +1,11 @@
 define(['jquery','param'],function($){
 	var code = getUrlParam('code');
+	console.log(code);
 	$.ajax({
 		type:'get',
 		url: api+'v1/api/weixin/getOpenId?code='+code,
 		success:function(res){
+			console.log(res);
 			var data = res.datas;
 			var headimgurl = data.headimgurl;
 			var openid = data.openid;
@@ -24,3 +26,5 @@ function getUrlParam(name) {
 	return unescape(r[2]);
 	return null; //返回参数值
 }
+
+
