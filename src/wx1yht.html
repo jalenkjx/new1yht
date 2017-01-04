@@ -32,7 +32,7 @@
 				</ul>
 				<div class="userInfo" style="display:none;">
 					<div class="icon"></div>
-					<p class="who">您的好友“<strong>暖暖</strong>”邀请您助力得1元海淘</p>
+					<p class="who">您的好友“<strong></strong>”邀请您助力得1元海淘</p>
 					<div class="goodDetail">
 						<div class="goodDetail_info"></div>
 						<!--<div class="imgbox"><img src="" alt="" /></div>-->
@@ -42,28 +42,16 @@
 								<div class="price">￥<strong>180</strong></div>
 							</div>
 						</div>-->
-						<div class="help">已有<span>8</span>位好友帮TA，还差<span style="color:#e70e39;">2</span>位就可以一元海淘啦！</div>
+						<div class="help">已有<span></span>位好友帮TA，还差<span style="color:#e70e39;"></span>位就可以一元海淘啦！</div>
 					</div>
+					<button class="receive" style="display:none;">1元领取</button>
 					<button class="helphim01">召集好友</button>
 					<button class="helphim">我要帮他</button>
 					<a href="javascript:;" class="metoo">我也要1元海淘</a>
 					<div class="separate">帮他的好友</div>
 					<div class="iconbox">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li>...</li>
+						<ul class="helpheadimg">
+							
 						</ul>
 					</div>
 				</div>
@@ -82,7 +70,7 @@
 					<p class="cong">恭喜您获得真真海淘优惠券</p>
 					<div class="convert">
 						<p>
-							兑换码:<input id="coupon" type="text" value = 'VCXDFGGGG' readonly="readonly"/>
+							兑换码:<input id="coupon" type="text" value = '' readonly="readonly"/>
 						</p>
 						<!--<button class="copy" data-clipboard-text = 'youhuiquan' data-clipboard-action="copy" >复制</button>-->
 					</div>
@@ -92,11 +80,11 @@
 				<div class="phoneCheck" style="display:none;">
 					<p>请输入手机号后登陆真真海淘APP领取商品</p>
 					<p>*手机号是领奖唯一凭证</p>
-					<p class="phoneNum"><input type="number" placeholder="请输入手机号码"/></p>
-					<p class="checkCode"><input type="number" placeholder="请输入验证码"/> <span>获取验证码</span></p>
-					<button>手机号码验证</button>
+					<p class="phoneNum"><input id="phone" type="number" placeholder="请输入手机号码"/></p>
+					<p class="checkCode"><input id="yanzheng" type="number" placeholder="请输入验证码"/> <span id="getCheckCode">获取验证码</span></p>
+					<button id="check">手机号码验证</button>
 				</div>
-				<div class="check_succ">
+				<div class="check_succ" style="display:none;">
 					<p>手机号已验证成功</p>
 					<p>请下载真真海淘APP1元领取商品</p>
 					<button class="download">下载真真海淘APP</button>
@@ -104,6 +92,7 @@
 					
 			</div>
 			<div class="mask" style="display:none;"></div>
+			<div class="sharemask" style="display:none;"><img src="http://og20zwqwb.bkt.clouddn.com/maskwords.png" alt="" style="width:100%;"/></div>
 		</div>
 	</body>
 

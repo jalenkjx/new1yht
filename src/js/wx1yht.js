@@ -10,8 +10,8 @@ var winWidth = window.innerWidth;
 	}
 require(['jquery',
 		'param',
-		'goodlist',
-		//'getOpenId'
+//		'goodlist',
+		'getOpenId'
 		],function($){
 //	if($('.mask').css('display')=='block'){
 //		console.log($('.mask').css('display'));

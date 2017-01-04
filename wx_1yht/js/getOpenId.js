@@ -172,8 +172,8 @@ define(['jquery','param'],function($){
 						//分享数据
 						obj = {
 							    title: '快！真真海淘全球好货1元抢！进口面膜、MK迪奥包包等海外真品1元包邮到家…',
-							    desc: '我正在参与真真海淘“1元海淘”活动，价值'+goodprice+'元的'+goodname+'支付1元即可领取，快来一起参加吧！',
-
+							    desc: '我正在参与真真海淘“1元海淘”活动，价值'+goodprice+'元的'+goodname+'支付1元即可领取，快来一起参加吧！
+',
 							    //分享链接
 							    link: api+"v1/api/weixin/getCode?redirectUrl=http://service.myzhenzhen.com/mobile/wx_test/wx_1yht/wx1yht.html?"+
 							    "openid="+topen+"$headimgurl="+theadurl+"$nickname="+encodenick+"$taskid="+dbtaskid+"$goodid="+dbgoodid+"=",
@@ -304,7 +304,7 @@ define(['jquery','param'],function($){
 									"tHeadimgurl": theadurl,
 									"taskId":t_id,
 									"goodsId":g_id,
-									"actId":1235
+									"actId":1075
 									}
 						});
 						
@@ -323,7 +323,7 @@ define(['jquery','param'],function($){
 								//帮助提交成功 弹出提示
 								if(res.res_code==200){
 									$('.alert_help').css('display','block');
-									$('.succ_help').css('display','block').siblings('div').css('display','none');
+									$('.succ_help').css('display','block').siblings('div').css('display','block');
 									
 									$('#coupon').val(res.datas.actCode);
 								}
