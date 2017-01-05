@@ -78,7 +78,7 @@ define(['jquery','param'],function($){
 											'<div class="other">'+
 												'<div class="price">￥<strong>'+data[i].goods.actualPrice+'</strong></div>'+
 												'<div class="share">需邀请<span>'+data[i].condition+'</span>位好友</div>'+
-												'<button>立即参与</button>'
+												'<button>召集好友</button>'
 											'</div>'+
 										'</div>'+
 									'</li>';
@@ -390,11 +390,13 @@ define(['jquery','param'],function($){
 								$('.help').children('span').eq(0).html(resd.hasCount);
 								$('.help').children('span').eq(1).html(resd.leftCount);
 								if(resd.leftCount == 0){
-									
-									if(open==null||open==topen){
-										$('.receive').css('display','block');
+									if(resd.finishStatus==0){
+										if(open==null||open==topen){
+											$('.receive').css('display','block');
+										}
+									}else{
+										$('.received').css('display','block');
 									}
-
 									$('.helphim01').css('display','none');
 								}
 								var htm = '';
