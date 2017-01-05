@@ -93,6 +93,7 @@ define(['jquery','param'],function($){
 						$('.metoo').css('display','none');
 						$('.separate').html('帮我的好友');
 						
+						
 					}else {
 						//帮助的好友查看
 						$('.helphim01').css('display','none');
@@ -357,7 +358,7 @@ define(['jquery','param'],function($){
 					}
 					
 					//微信用户进入帮助页面接口
-					if(open){
+					if(open && (open != topen)){
 						helpParam = JSON.stringify(
 						{"wxTask":{
 									"openId": open,
@@ -390,23 +391,24 @@ define(['jquery','param'],function($){
 								$('.help').children('span').eq(1).html(resd.leftCount);
 								if(resd.leftCount == 0){
 									
-									if(open){
-										
-									}else{
+									if(open==null||open==topen){
 										$('.receive').css('display','block');
 									}
+
 									$('.helphim01').css('display','none');
 								}
+								var htm = '';
 								$.each(resd.myOpenIds, function(i) {
 									if(i<13){
-										var htm = '<li><img src="'+resd.myOpenIds[i].tHeadimgurl+'"/></li>';
-										$('.helpheadimg').append(htm);
+										 htm += '<li><img src="'+resd.myOpenIds[i].tHeadimgurl+'"/></li>';
+										
 									}else if(i==13){
-										var htm = '<li>...</li>';
-										$('.helpheadimg').append(htm);
+										 htm += '<li>...</li>';
+										
 									}
 									
 								});
+								$('.helpheadimg').append(htm);
 								
 							}
 						});
